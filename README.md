@@ -11,11 +11,19 @@ and real-time incident notifications.
 
 ## Architecture
 
-![AEGIS SOC Architecture](architecture/architecture.png)
+![AEGIS SOC Architecture](architecture.jpeg)
 
-The architecture simulates a modern Security Operations Center (SOC)
-pipeline where security telemetry flows through detection, analysis,
-automation, and notification stages.
+### Architecture Flow
+
+1. Attacker machine simulates malicious activity using Kali Linux or Windows attack tools.
+2. The Windows 10 victim machine runs Sysmon and the Wazuh agent to collect detailed security logs.
+3. Wazuh Manager (Ubuntu) acts as the SIEM detection engine and generates security alerts.
+4. A custom webhook script forwards alerts from Wazuh to the automation pipeline.
+5. n8n automation engine processes the alert and sends it for AI analysis.
+6. AI analysis using Ollama TinyLlama evaluates the alert and determines threat context.
+7. A decision engine determines whether threat intelligence enrichment is required.
+8. If required, the system queries the VirusTotal API for reputation analysis.
+9. The final SOC alert is sent automatically through a Telegram bot.
 
 ---
 
