@@ -51,19 +51,19 @@ and real-time incident notifications.
 
 ### Wazuh Detection
 
-![Wazuh Dashboard](screenshots/wazuh-dashboard.png)
+![Wazuh Dashboard](wazuh-dashboard.png)
 
 ---
 
 ### Automation Workflow
 
-![n8n Workflow](screenshots/n8n-workflow.png)
+![n8n Workflow](n8n-workflow.png)
 
 ---
 
 ### SOC Alert Notification
 
-![Telegram Alert](screenshots/telegram-soc-alert.png)
+![Telegram Alert](telegram-alert.png)
 
 ---
 
