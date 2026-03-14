@@ -9,6 +9,15 @@ and real-time incident notifications.
 
 ---
 
+## Project Overview
+
+AEGIS is an AI-assisted SOC automation system designed to simulate a modern Security Operations Center pipeline.  
+It integrates Wazuh SIEM, automation workflows, threat intelligence enrichment, and real-time incident notification.
+
+The platform demonstrates how security alerts can be automatically detected, analyzed, enriched, and delivered to security analysts without manual intervention.
+
+---
+
 ## Architecture
 
 ![AEGIS SOC Architecture](architecture.jpeg)
@@ -24,6 +33,26 @@ and real-time incident notifications.
 7. A decision engine determines whether threat intelligence enrichment is required.
 8. If required, the system queries the VirusTotal API for reputation analysis.
 9. The final SOC alert is sent automatically through a Telegram bot.
+
+---
+
+## Key Features
+
+- Real-time security monitoring using Wazuh SIEM
+- Automated alert processing with n8n workflows
+- AI-assisted threat analysis using Ollama (TinyLlama)
+- Threat intelligence enrichment using VirusTotal API
+- Automated SOC alert notifications through Telegram bot
+
+---
+
+## Lab Environment
+
+- Attacker Machine: Kali Linux
+- Victim Machine: Windows 10 (Sysmon + Wazuh Agent)
+- SIEM Server: Ubuntu (Wazuh Manager)
+- Automation Engine: n8n
+- AI Model: Ollama TinyLlama
 
 ---
 
