@@ -56,6 +56,26 @@ The platform demonstrates how security alerts can be automatically detected, ana
 
 ---
 
+## Attack Simulation
+
+To validate the SOC automation pipeline, multiple attack scenarios were simulated
+against the Windows 10 monitored system.
+
+The following security activities were detected and analyzed by Wazuh SIEM.
+
+### Simulated Attacks
+
+- Encoded PowerShell execution
+- Suspicious command execution
+- Privilege escalation attempt
+- Network activity detection
+- Authentication and login events
+
+These events generated alerts in Wazuh, which were automatically forwarded to
+the n8n automation workflow for AI-assisted analysis and alert enrichment.
+
+---
+
 ## Technologies Used
 
 - Wazuh SIEM
