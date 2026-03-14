@@ -11,9 +11,11 @@ and real-time incident notifications.
 
 ## Architecture
 
-![Architecture Diagram](architecture/architecture.png)
+![AEGIS SOC Architecture](architecture/architecture.png)
 
-Wazuh SIEM → Webhook → n8n Automation → AI Analysis → VirusTotal → Telegram Alerts
+The architecture simulates a modern Security Operations Center (SOC)
+pipeline where security telemetry flows through detection, analysis,
+automation, and notification stages.
 
 ---
 
